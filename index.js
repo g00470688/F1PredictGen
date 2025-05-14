@@ -1,4 +1,4 @@
-const drivers = ['LEC','HAM','VER','LAW','NOR','PIA','RUS','ANT','ALB','SAI','STR','ALO','TSU','HAD','GAS','DOO',
+const drivers = ['LEC','HAM','VER','LAW','NOR','PIA','RUS','ANT','ALB','SAI','STR','ALO','TSU','HAD','GAS','COL',
 	'HUL','BOR','OCO','BER'];
 const pred = new Array(10);
 let pos = document.getElementsByClassName("pilot-select");
