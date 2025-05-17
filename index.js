@@ -1,5 +1,5 @@
 const drivers = ['LEC','HAM','VER','LAW','NOR','PIA','RUS','ANT','ALB','SAI','STR','ALO','TSU','HAD','GAS','COL',
-	'HUL','BOR','OCO','BER'];
+	'HUL','BOR','OCO','BEA'];
 const pred = new Array(10);
 let pos = document.getElementsByClassName("pilot-select");
 for(let select of pos ) {
