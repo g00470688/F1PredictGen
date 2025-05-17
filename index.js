@@ -32,7 +32,7 @@ function getDrivers()
 		}
 	}
 	if(isRight) {
-		output[0].innerHTML = `Дивізіон ${document.getElementById("division").value}<br>` +
+		output[1].innerHTML = `Дивізіон ${document.getElementById("division").value}<br>` +
 			`${document.getElementById("firstname").value} ${document.getElementById("lastname").value}<br>` +
 			`${document.getElementById("team").value}<br>` +
 			`${document.getElementById("session").value}<br>` +
