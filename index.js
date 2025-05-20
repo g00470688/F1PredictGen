@@ -1,5 +1,5 @@
-const drivers = ['LEC','HAM','VER','LAW','NOR','PIA','RUS','ANT','ALB','SAI','STR','ALO','TSU','HAD','GAS','DOO',
-	'HUL','BOR','OCO','BER'];
+const drivers = ['LEC','HAM','VER','LAW','NOR','PIA','RUS','ANT','ALB','SAI','STR','ALO','TSU','HAD','GAS','COL',
+	'HUL','BOR','OCO','BEA'];
 const pred = new Array(10);
 let pos = document.getElementsByClassName("pilot-select");
 for(let select of pos ) {
@@ -32,7 +32,7 @@ function getDrivers()
 		}
 	}
 	if(isRight) {
-		output[0].innerHTML = `Дивізіон ${document.getElementById("division").value}<br>` +
+		output[1].innerHTML = `Дивізіон ${document.getElementById("division").value}<br>` +
 			`${document.getElementById("firstname").value} ${document.getElementById("lastname").value}<br>` +
 			`${document.getElementById("team").value}<br>` +
 			`${document.getElementById("session").value}<br>` +
