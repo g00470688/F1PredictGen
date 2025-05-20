@@ -32,7 +32,7 @@ function getDrivers()
 		}
 	}
 	if(isRight) {
-		output[1].innerHTML = `Дивізіон ${document.getElementById("division").value}<br>` +
+		output[0].innerHTML = `Дивізіон ${document.getElementById("division").value}<br>` +
 			`${document.getElementById("firstname").value} ${document.getElementById("lastname").value}<br>` +
 			`${document.getElementById("team").value}<br>` +
 			`${document.getElementById("session").value}<br>` +
@@ -46,6 +46,7 @@ function getDrivers()
 			`8. ${pred[7]}<br>` +
 			`9. ${pred[8]}<br>` +
 			`10. ${pred[9]}`
+		output[1].innerHTML = output[0].innerHTML
 	}
 	else{
 		alert('в прогнозі обрано два пілоти, спробуйте ще раз');
