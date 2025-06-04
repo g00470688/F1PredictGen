@@ -1,3 +1,13 @@
+async function writeToClipboard(text) {
+	try {
+	  await navigator.clipboard.writeText(text);
+	} catch (error) {
+	  console.error(error);
+	}
+  }
+  
+  
+
 const drivers = ['LEC','HAM','VER','LAW','NOR','PIA','RUS','ANT','ALB','SAI','STR','ALO','TSU','HAD','GAS','COL',
 	'HUL','BOR','OCO','BEA'];
 const pred = new Array(10);
@@ -47,6 +57,7 @@ function getDrivers()
 			`9. ${pred[8]}<br>` +
 			`10. ${pred[9]}`
 		output[1].innerHTML = output[0].innerHTML
+		writeToClipboard(output[0].innerHTML.replace(/<br\s*\/?>/gi, '\n'))
 	}
 	else{
 		alert('в прогнозі обрано два пілоти, спробуйте ще раз');
