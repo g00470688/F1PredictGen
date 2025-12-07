@@ -8,7 +8,7 @@ async function writeToClipboard(text) {
   
   
 
-const drivers = ['LEC','HAM','VER','LAW','NOR','PIA','RUS','ANT','ALB','SAI','STR','ALO','TSU','HAD','GAS','COL',
+const drivers = ['LEC','HAM','VER','LAW','NOR','PIA','RUS','ANT','ALB','SAI','STR','ALO','ARV','HAD','GAS','COL',
 	'HUL','BOR','OCO','BEA'];
 const pred = new Array(10);
 let pos = document.getElementsByClassName("pilot-select");
